@@ -9,6 +9,10 @@
 
 .colorazione{
     color: red;
+    border-left: 1px outset yellow;
+    padding-left: 15px;
+    border-width: 1px;
+
 }
 
 
@@ -18,5 +22,23 @@ img{
 }
 
 #headtitle{
+    background-color: yellow;
+    height: 50px;
+    color: rgb(0, 89, 255);
+    border-top: 1px outset rgb(255, 204, 0);
+    line-height: 50px;
+}
+
+.link{
+    color: blueviolet;
+}
+
+#colorgrey{
+    color: rgb(181, 181, 181);
+}
+
+.sottolineatura{
+    border-bottom: 1px outset blue;
+    padding-bottom: 15px;
     
 }
