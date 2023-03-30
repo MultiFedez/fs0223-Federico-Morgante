@@ -1,5 +1,5 @@
 /* IMPOSTAZIONI GENERALI */
-.h1{
+#titolo{
     color: black;
     font-weight: bold;
     text
@@ -11,7 +11,10 @@
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: rgb(8, 116, 155);
+}
 
+#font{
+    font-family: 'Poppins', sans-serif;
 }
 
 img{
@@ -27,7 +30,9 @@ img{
     content: ⇒;
 }
 /* MAIN */
-
+#fucsia{
+    color: rgb(214, 43, 226);
+}
 /* ELEMENTI NEL MAIN - ARTICLE */
 
 /* TABELLE */
