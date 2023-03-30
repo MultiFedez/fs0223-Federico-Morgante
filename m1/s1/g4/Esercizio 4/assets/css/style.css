@@ -1,8 +1,7 @@
 /* IMPOSTAZIONI GENERALI */
 #titolo{
     color: black;
-    font-weight: bold;
-    text
+    font-size: 1.5rem;
 }
 
 /* HEADER */
@@ -15,13 +14,14 @@
 
 #font{
     font-family: 'Poppins', sans-serif;
+    background-image: url(../img/sfondo.png);
 }
 
 img{
     padding: 15px;
 }
 .menu{
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -32,6 +32,9 @@ img{
 /* MAIN */
 #fucsia{
     color: rgb(214, 43, 226);
+}
+.main{
+    background-color: rgb(255, 255, 255);
 }
 /* ELEMENTI NEL MAIN - ARTICLE */
 
