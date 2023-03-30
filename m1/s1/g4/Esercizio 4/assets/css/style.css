@@ -1,7 +1,31 @@
 /* IMPOSTAZIONI GENERALI */
+.h1{
+    color: black;
+    font-weight: bold;
+    text
+}
 
 /* HEADER */
+.quadrato{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(8, 116, 155);
 
+}
+
+img{
+    padding: 15px;
+}
+.menu{
+    color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#q3{
+    content: ⇒;
+}
 /* MAIN */
 
 /* ELEMENTI NEL MAIN - ARTICLE */
