@@ -9,6 +9,7 @@ body{
     color: #393d41;
     line-height: 30px;
     word-wrap: break-word;
+    
 }
 
 header{
@@ -20,6 +21,11 @@ header{
 
 header img{
     width: 30%;
+}
+
+div{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .partiamo{
@@ -46,7 +52,7 @@ h1{
 
 button{
     font-family: 'Montserrat', sans-serif;
-    background-color: #e22d0e;
+    background-color: #f04c2f;
     color: white;
     border-radius: 8%;
     width: 150px;
@@ -75,4 +81,48 @@ p{
 }
 .riquadronotizie h2{
     font-size: 30px;
+    margin-bottom: 20px;
+    padding-top: 25px;
+}
+.messaggio{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.titolaremex{
+    font-size: 18px;
+    margin-bottom: 1px;
+}
+.azienda{
+    font-size:11px;
+}
+
+article h3 p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#boxbordi{
+    border: 1px solid #dee1e3;
+    padding-bottom: 30px;
+}
+    
+
+footer{
+    background-color: #25a2c3;
+    color: white;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer a{
+    color: #c8e7f0;
+}
+footer p{
+    font-size: 10px;
+}
+
+h2{
+    font-size: 25px;
+    margin-bottom: 15px;
 }
