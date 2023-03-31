@@ -5,6 +5,10 @@ font-family: 'Open Sans', sans-serif;
 
 body{
     text-align: center;
+    font-size: 1.2rem;
+    color: #393d41;
+    line-height: 30px;
+    word-wrap: break-word;
 }
 
 header{
@@ -26,10 +30,49 @@ header img{
    padding-bottom: 35px;
    padding-left: 20px;
    padding-right: 20px;
-   
+   margin-bottom: 50px;
+}
+
+.partiamo p{
+    margin-bottom: 30px;
+    font-size: 18px;
 }
 
 h1{
     font-size: 35px;
     margin-bottom: 30px;
+    color: rgb(0, 126, 216);
+}
+
+button{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e22d0e;
+    color: white;
+    border-radius: 8%;
+    width: 150px;
+    height: 50px;
+}
+
+h3{
+    font-size: 18px;
+    color: rgb(0, 126, 216);
+    margin-bottom: 15px;
+}
+
+p{
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.fototonda{
+    border-radius: 100%;
+    margin-bottom: 30px;
+}
+
+.riquadronotizie{
+    background-color:#e22d0e;
+    color: white;
+}
+.riquadronotizie h2{
+    font-size: 30px;
 }
