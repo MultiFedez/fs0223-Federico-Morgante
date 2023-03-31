@@ -2,16 +2,16 @@
 body{
 font-family: 'Open Sans', sans-serif;
 }
-
+/* Body */
 body{
     text-align: center;
     font-size: 1.2rem;
     color: #393d41;
     line-height: 30px;
     word-wrap: break-word;
-    
+    line-height: 1.65;
 }
-
+/* LOGO */
 header{
     background-color: black;
     padding-top: 10px;
@@ -23,11 +23,7 @@ header img{
     width: 30%;
 }
 
-div{
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
+/* MAIN PRIMO BLOCCO */
 .partiamo{
    background-image: url(../images/banner.jpg); 
    background-size: cover;
@@ -48,6 +44,7 @@ h1{
     font-size: 35px;
     margin-bottom: 30px;
     color: rgb(0, 126, 216);
+    line-height: 1;
 }
 
 button{
@@ -59,10 +56,13 @@ button{
     height: 50px;
 }
 
+/* SECTION */
+
 h3{
     font-size: 18px;
     color: rgb(0, 126, 216);
     margin-bottom: 15px;
+    line-height: 1;
 }
 
 p{
@@ -70,10 +70,14 @@ p{
     margin-bottom: 35px;
 }
 
+/* FOTOROTONDA */
+
 .fototonda{
     border-radius: 100%;
     margin-bottom: 30px;
 }
+
+/* RIQUADRO ROSSO TESTIMONIANZE */
 
 .riquadronotizie{
     background-color:#e22d0e;
@@ -96,16 +100,19 @@ p{
     font-size:11px;
 }
 
-article h3 p{
-    padding-left: 10px;
-    padding-right: 10px;
+/* BOX FOTO + TESTO */
+
+.boxbordi{
+    border: 1px solid #dee1e3;
+    margin: 20px auto;
+    width: 90%;
 }
 
-#boxbordi{
-    border: 1px solid #dee1e3;
-    padding-bottom: 30px;
+.boxbordi img{
+    width: 100%;
 }
-    
+
+/* FOOTER CONTATTI */
 
 footer{
     background-color: #25a2c3;
@@ -125,4 +132,5 @@ footer p{
 h2{
     font-size: 25px;
     margin-bottom: 15px;
+    line-height: 1;
 }
