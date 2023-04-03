@@ -13,4 +13,3 @@ if(anni >= 18 && anni <= 100)
 /*location.href = 'https://www.youtube.com/watch?v=6aAnoeK-BsA'}*/
 
 
-document.getElementById("juve").onclick = function (){document.getElementById("logo").src = "img/"
