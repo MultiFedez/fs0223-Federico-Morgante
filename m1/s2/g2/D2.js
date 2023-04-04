@@ -12,13 +12,36 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-//- String = "insieme di caratteri o parole racchiuse da apici singoli o doppi"
+//- String = "insieme di caratteri o parole racchiuse da apici singoli o doppi oppure backtick"
+let string = "questa è una stringa";
+let string1 = "questa è una stringa";
+let string2 = `questa è una stringa`;
+
 //- Number = un qualsiasi carattere numerico che sia intero o decimale
+let number1 = 5;
+let number2 = 5.5;
+
 //- Boolean = un output che può essere "true" oppure "false"
+let maggiorenne = true;
+let centenario = false;
+
 //- Null = un output che si ottiene quando si cerca un elemento che non esiste
+let div = document.getElementById("test");
+console.log(div);
+
 //- Undefined = un output che si ottiene quando una variabile non ha un valore definito
+// let x = document.write("Hello World");
+// console.log(x);
+
 //- Object = un insieme di coppie chiave-valore che ne definisce le proprietà
+let persona = {
+  nome: "Gianluca",
+  cognome: "Falcone",
+  eta: 35,
+};
+
 //- Array = una variabile speciale che può contenere più valori
+let arr = [0, 1, 2, 3, 4, 5];
 
 /* ESERCIZIO 2
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
