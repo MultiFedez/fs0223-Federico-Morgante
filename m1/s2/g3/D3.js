@@ -96,86 +96,23 @@ if ((totalShoppingCart - sconto) >= 50){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-// {
-// let num1 = 66;
-// let num2 = 48;
-// let num3 = 14;
-// let arr = [];
 
-// if (arr == []){
-//   arr.push(num1, num2, num3)
-//   console.log(arr)
-// }
-
-// arr.sort(function(a,b){
-//   return a - b
-// });
-
-// console.log(arr)
-// }
-
-/*
-
-let num = [1,100,20,22,101];
-
-        num.sort(function(a,b){
-            return a - b
-        });
-
-        console.log(num);
-
-
-
-
-if(num1 > num2 && num1 > num3 && num2 > num3){
-  arr.unshift(num1)
-  console.log(arr)
-}else if(num2 > nume3){
-  arr.push(num2)
-  console.log(arr)
-}
-
-
-  
-}
-
-let a = 2 
-let b = 4
-let c = 8
-
-if (a > b && a > c)
 {
-        if (b>c)
-        {
-            console.log(La sequenza sarà ${a} ${b} ${c});
-        }
-        else
-        {
-            console.log(La sequenza sarà ${a} ${c} ${b});
-        }
+let num1 = 30;
+let num2 = 48;
+let num3 = 51;
+let arr = [];
+
+if (arr.length == 0){
+  arr.push(num1, num2, num3)
 }
-else if (b > a && b > c)
-{
-        if (a>c)
-        {
-             console.log(la sequenza sarà ${b} ${a} ${c});
-        }
-        else
-        {
-             console.log(la sequenza sarà ${b} ${c} ${a});
-        }
+
+arr.sort(function(a,b){
+  return b - a
+});
+
+console.log(arr);
 }
-else if (c > a && c > b)
-{
-        if (a>b)
-        {
-            console.log(la sequenza sarà ${c} ${a} ${b});
-        }
-        else
-        {
-            console.log(la sequenza sarà ${c} ${b} ${a});
-        }
-}*/
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -274,8 +211,6 @@ if (val >= 5 && val < 10) {
 
   me.skills.pop()
   console.log(me);
-
-  
 }
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
@@ -283,7 +218,23 @@ if (val >= 5 && val < 10) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let arr = [];
+arr.push(1,2,3,4,5,6,7,8,9,10);
+console.log(arr);
+
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
+/* SCRIVI QUI LA TUA RISPOSTA */
+
+arr[9] = 100;
+console.log(arr);
+
+/*{
+    let arr = [];
+    arr.push(1,2,3,4,5,6,7,8,9,10)
+    arr.pop()
+    arr.push(100)
+    console.log(arr);
+  }*/
