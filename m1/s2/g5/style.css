@@ -1,0 +1,157 @@
+/* Header Logo */
+
+header{
+    background-color: #222f3f;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   }
+
+/* Body */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9edee;
+}
+/* tasti multimediali */
+nav{
+    background-color: #364759;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    
+}
+nav a{
+    color:#f3fafe;
+    margin-left: 25px;
+    text-decoration: none;
+    
+}
+
+nav a:hover{
+    border: 1px solid white;
+}
+
+/* TITOLI VARI */
+h3{
+    font-size: small;
+    background-color: #f56600;
+    text-align: center;
+    color: #eaf3f4;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#banner{
+    background-image: url(amazon/assets/bg-image.png);
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+    color: #ecefed;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+/* blocco di immagini */
+
+#compra-ora{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 65px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}  
+
+#compra-ora a{
+    text-decoration: none;
+    color: #578c95;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+.foto{
+height: 400px;
+width: 23%;
+border-radius: 5%;
+box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.3)
+}
+
+#boxfoto{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    
+}
+
+#tab{
+    background-image: url(amazon/assets/img_1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#pc{
+    background-image: url(amazon/assets/img_2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#smartwatch{
+    background-image: url(amazon/assets/img_3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#pets{
+    background-image: url(amazon/assets/img_4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#insieme{
+    background-color:#ffffff ;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+
+#compra-giochi{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+    
+  
+
+}
+#compra-giochi a{
+    text-decoration: none;
+    color: #578c95;
+    font-size: 0.8rem;
+    margin-left: 10px; 
+}
+#compra-giochi p{
+    display: inline;
+}
+
+#visore{
+    background-image: url(amazon/assets/img_9.png);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
