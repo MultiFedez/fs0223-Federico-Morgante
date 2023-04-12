@@ -104,8 +104,15 @@ console.log(lunghezze (['EPICODE', 'is', 'great']));
 */
 
 let numeriDispari = [];
-
-
+function dispari(){
+  for(let i = 0; i < 100; i++){
+    if(i % 2 != 0){
+      numeriDispari.push(i)
+    }
+  }
+  return numeriDispari;
+}
+console.log(dispari());
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
   {
