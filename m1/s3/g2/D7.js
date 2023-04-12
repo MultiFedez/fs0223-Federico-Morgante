@@ -103,6 +103,9 @@ console.log(lunghezze (['EPICODE', 'is', 'great']));
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
 
+let numeriDispari = [];
+
+
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
   {
@@ -264,6 +267,14 @@ console.log(film2);
 /* ESERCIZIO 14
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
+
+let film3 =[];
+for (let i = 0; i < movies.length; i++){
+  if(movies[i].imdbID === 'tt0077869'){
+    film3.push(movies[i]);
+  }
+}
+console.log(film3);
 
 /* ESERCIZIO 15
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
