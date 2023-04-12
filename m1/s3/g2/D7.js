@@ -90,8 +90,14 @@ console.log(incrementi([1,5,10,15,20], 10));
 */
 
 function lunghezze(array) {
+  let unione = [];
+  for (let i = 0 ; i < array.length ; i++){
+    unione.push(array[i].length)
 
+  }
+  return unione;
 }
+console.log(lunghezze (['EPICODE', 'is', 'great']));
 
 /* ESERCIZIO 9
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
