@@ -90,14 +90,13 @@
 
     /* ESERCIZIO 2
        Scrivi una funzione per aggiungere al titolo della pagina una classe "myHeading"
-   
-
-    const addClassToTitle = function () {
-      let classT = document.createElement('class').setAttribute('myHeading')
-      console.log(addClassToTitle());
-  }
-    addClassToTitle(); */
+    */
     
+    const addClassToTitle = function () { 
+      let classT = document.getElementsByTagName('h1');
+      classT[0].classList.add('myHeading');
+    }
+    addClassToTitle();
     
 
     /* ESERCIZIO 3
@@ -163,28 +162,32 @@
       */
 
     const paintItGreen = function () {
-      let pippo = document.querySelector('ul');
-      for(let x of pippo){
-        x.style.backgroundColor = 'green';
+      let disordinata = document.querySelectorAll('ul');
+      for(let nuova of disordinata){
+        nuova.style.backgroundColor = 'green';
       }
     }
       paintItGreen()
+      console.log(paintItGreen());
       
-
-
-    
-    
-
     /* ESERCIZIO 9
        Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
       */
 
     const makeItClickable = function () {
 
+      let h1 = document.querySelector('h1');
+            let testoArr = h1.innerText.split('');
 
-    }
+            testoArr.pop();
 
-    /* ESERCIZIO 10
+            let nuovoTesto = testoArr.join('');
+            h1.textContent = nuovoTesto;
+            document.querySelector('h1').addEventListener('click', makeItClickable);
+
+        }
+        
+        /* ESERCIZIO 10
        Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
       */
 
