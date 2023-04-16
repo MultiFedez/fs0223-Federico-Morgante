@@ -337,20 +337,24 @@ function deleteProp(obj,str) {
   delete obj[str];
   return obj;
 }
-console.log(deleteProp());
+
+console.log(deleteProp(me , 'surname'));
 
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
 */
 
-let newestMovie = movies.reduce(function (p, g) {
+function newestMovie() {
+  return movies.reduce(function (p, g) {
   if (p.Year < g.Year) {
     return g;
   } else {
     return p;
   }
-})
-console.log(newestMovie);
+}
+  )
+    }
+console.log(newestMovie());
 
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
@@ -415,7 +419,7 @@ function searchByTitle(str) {
   });
   return risultato;
 }
-console.log(searchByTitle('The'));
+console.log(searchByTitle('Lord'));
 
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
@@ -436,7 +440,7 @@ function searchAndDivide(str) {
   });
   return big;
 }
-console.log(searchAndDivide('The'));
+console.log(searchAndDivide('Lord'));
 
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
@@ -446,7 +450,7 @@ function removeIndex(num) {
   movies.splice(num, 1);
   return movies;
 }
-console.log(removeIndex(1));
+console.log(removeIndex(6));
 
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
@@ -455,7 +459,7 @@ console.log(removeIndex(1));
 */
 
 function isContainer() {
-  let conteier = document.querySelector('#container');
+  let container = document.querySelector('#container');
 }
 console.log(isContainer());
 
@@ -475,13 +479,13 @@ selectAllTd();
 
 function stampaTd() {
   let allTd = document.querySelectorAll('td')
-  let b = [];
   for (let i of allTd) {
     let contentTd = i.textContent;
     console.log(contentTd);
   }
 }
 stampaTd();
+
 
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
@@ -502,9 +506,10 @@ backgroundColor();
 function addList() {
   let list = document.querySelector('#myList');
   let nuovaLista = document.createElement('li');
-  nuovaLista.textContent = 'Nuovo elemento';
+  nuovaLista.textContent = '*FrontKick';
   list.appendChild(nuovaLista);
 }
+addList();
 
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
@@ -513,6 +518,14 @@ function addList() {
 function removeList() {
   document.querySelector('#myList').remove()
 }
+
+/* per eliminare solo i <li></li>*/
+function clearUl() {
+  let unorderedList = document.querySelector('#myList');
+  let liElements = unorderedList.querySelectorAll('li');
+  liElements.forEach(li => li.remove());
+}
+removeList();
 
 
 /* ESERCIZIO 26
