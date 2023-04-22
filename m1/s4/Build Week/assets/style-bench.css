@@ -1,0 +1,99 @@
+/* Seconda pagina Benchmark */
+
+.qea{
+    text-align: center;
+}
+
+.question{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 150px;
+    margin-top: 100px;
+}
+
+.button-answer{
+    border-color: white;
+    border-bottom-color: rgb(61, 60, 60);
+    color: white;
+    background-color:transparent;
+    width: 400px;
+    height: 80px;
+    border-radius: 40px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+
+.button-answer:active{
+   background-color: #900080;
+}
+
+.pressed{
+    background-color: #900080
+}
+
+.button-all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1000px;
+
+
+}
+
+.counter{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Sezione Timer */
+
+.benchmark{
+  position: relative;
+}
+.timer {
+  position: absolute;
+  right: 60px;
+  top: -260px;
+  
+}
+.base-timer {
+    width: 200px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+  color: aqua;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}
