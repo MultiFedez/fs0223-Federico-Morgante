@@ -97,10 +97,6 @@ main {
   margin-bottom: 1.5em;
 }
 
-.block{
-  
-  }
-
 @media screen and (min-width: 700px) {
   main {
     padding: 2em;
@@ -128,10 +124,14 @@ section h2 {
 /* ELEMENTI NEL MAIN - ARTICLE */
 
 .sottolineatura{
-  opacity: 0.5;
+  position: relative;
+}
+.sottolineatura img{
   position: absolute;
-  left: 30px;
-  padding-top: 20px;
+  left: 0;
+  width: 100%;
+  top: 60px;
+  opacity: 0.5;
 }
 
 h1 {
@@ -366,34 +366,59 @@ footer {
 /* BOTTONI */
 .container{
   position: fixed;
-  right: 0;
-  bottom: 20px;
+  right: -10px;
+  bottom: 10px;
 }
 .container button{
   position: absolute;
-  background-color: rgba(128, 128, 128, 0.499);
-  padding: 2px white;
+  font-size: x-large;
+  background-color: rgba(255, 255, 255,0.496);
+  color: #4e67b7;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid;
+  border-color: white;
+  border-radius: 15%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
-  .fa-caret-square-up{
-    padding: 1.5rem;
-    opacity: 0.5;
-    right: -5px;
-    bottom: 20px;
+  
+  #b1{
+    right: 0;
+    bottom: 140px;
 }
-  .fa-calendar-alt{
-    padding: 1.5rem;
-    opacity: 0.5;
-    right: -5px;
-    bottom: 90px;
+  #b2{
+    right: 0;
+    bottom: 70px;
 }
-  .fa-plus-square{
-    padding: 1.5rem;
-    opacity: 0,5;
-    right: -5px;
-    bottom: 160px;
+  #b3{
+    right: 0;
+    bottom: 0;
 }
 
-  
+#b3 a{
+  color: #ff6060;
+}
+
+@media screen and (min-width: 700px) {
+  .container{
+    position: fixed;
+    right: -10px;
+    top: 10px; 
+    z-index: 20;
+  }
+  #b1{
+    right: 0;
+    bottom: auto;
+    top: 0px;
+    
+}
+  #b2{
+    right: 0;
+    bottom: auto;
+    top: 80px;
+    
+}
+} 
 
 @media screen and (min-width: 800px) {
   footer {
@@ -448,9 +473,14 @@ footer a {
 .fa-tag{
   position: absolute;
   font-size: 70px;
-  right: 40px;
+  right: 20px;
   color: rgb(183, 183, 183);
   opacity: 0.5;
+  top: 20px;
+}
+
+aside div{
+  position: relative;
 }
 
 
