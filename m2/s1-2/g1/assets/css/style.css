@@ -127,6 +127,13 @@ section h2 {
 
 /* ELEMENTI NEL MAIN - ARTICLE */
 
+.sottolineatura{
+  opacity: 0.5;
+  position: absolute;
+  left: 30px;
+  padding-top: 20px;
+}
+
 h1 {
   font-size: 2.6rem;
   line-height: 1.2;
@@ -355,38 +362,35 @@ footer {
   text-align: center;
   font-size: 1.2rem;
 }
+
+/* BOTTONI */
 .container{
   position: fixed;
   right: 0;
-  bottom: 15px;
+  bottom: 20px;
 }
 .container button{
   position: absolute;
   background-color: rgba(128, 128, 128, 0.499);
-
+  padding: 2px white;
 }
-  .tornasu{
-    padding: 1.2rem;
+  .fa-caret-square-up{
+    padding: 1.5rem;
     opacity: 0.5;
-    
     right: -5px;
-    bottom: 10px;
-   
-    
-  }
-  .calendar{
-   padding: 1.2rem;
-    opacity: 0.5;
-    
-    right: -5px;
-    bottom: 80px;
+    bottom: 20px;
 }
-  .add{
-    padding: 1.2rem;
+  .fa-calendar-alt{
+    padding: 1.5rem;
+    opacity: 0.5;
+    right: -5px;
+    bottom: 90px;
+}
+  .fa-plus-square{
+    padding: 1.5rem;
     opacity: 0,5;
-    
     right: -5px;
-    bottom: 150px;
+    bottom: 160px;
 }
 
   
@@ -443,7 +447,10 @@ footer a {
 
 .fa-tag{
   position: absolute;
-  font-size: 30px;
-  right: 15px;
+  font-size: 70px;
+  right: 40px;
+  color: rgb(183, 183, 183);
   opacity: 0.5;
 }
+
+
