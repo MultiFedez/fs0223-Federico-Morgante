@@ -1,13 +1,15 @@
-.list{
-    padding: 5px 50px;
+/*.list{
+    padding: 5px 20px;
     border-radius: 20px;
     border: none;
     color: #61332a;
     background-color: #e6be0f;
+    text-align: center;
+    width: 45%;
 }
 
-.ape{
-    padding: 5px 50px;
+#ape{
+    padding: 5px 10px;
     border-radius: 20px;
     border: none;
     color: #61332a;
@@ -16,8 +18,72 @@
 
 .sistema{
     display: flex;
-    border-radius: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 50px;
     padding: 30px;
-    background-color:#f1db7a;
-    
+    background-color:#f1e5ac;
+    list-style-type: none;
+    max-width: 100%;
+}*/
+
+.navDiv{
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+.sistema {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fef7e2;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.sistema img{
+    height: 50px;
+    width: 50px;
+    margin-right: 50px;
+}
+
+#ape {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 40px 20px;
+}
+
+.list {
+    font-weight:bold ;
+    text-align: center;
+    color: #742305;
+    background-color: #ffdf7f;
+    margin: 10px 10px;
+    padding: 15px 0px 15px 0px;
+    border-radius: 50px;
+    width: 45%;
+}
+
+.listLink {
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+@media screen and (max-width: 440px) {
+    .barLi {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 501px) {
+    .navBar {
+        flex-wrap: nowrap;
+    }
+    #bee {
+        order: 0;
+    }
 }
