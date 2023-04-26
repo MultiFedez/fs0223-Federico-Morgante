@@ -1,0 +1,23 @@
+.list{
+    padding: 5px 50px;
+    border-radius: 20px;
+    border: none;
+    color: #61332a;
+    background-color: #e6be0f;
+}
+
+.ape{
+    padding: 5px 50px;
+    border-radius: 20px;
+    border: none;
+    color: #61332a;
+    background-color: #e6be0f;
+}
+
+.sistema{
+    display: flex;
+    border-radius: 20px;
+    padding: 30px;
+    background-color:#f1db7a;
+    
+}
