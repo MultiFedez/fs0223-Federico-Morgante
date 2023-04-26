@@ -1,0 +1,57 @@
+.container{
+    background-color: wheat;
+    border-radius: 60px;
+    color: #61332a;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.img{
+    background-size: cover;
+    background-image: url(assets2/imgs/honey.jpg);
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+
+.text{
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ width: 100%;
+ margin:10px 30px 10px 30px;
+}
+
+.paragrafi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paragrafi p{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.bio{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.aggiungi{
+    margin-bottom: 20px;
+}
+
+.button1{
+    padding: 5px 50px;
+    border-radius: 20px;
+    border: none;
+    color: #61332a;
+    background-color: #e6be0f;
+}
+
+.buttons{
+    display: none;
+}
