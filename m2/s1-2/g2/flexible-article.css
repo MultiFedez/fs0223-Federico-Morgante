@@ -1,0 +1,52 @@
+.box-container{
+    background-color: wheat;
+    border-radius: 30px;
+    padding: 25px;
+    color: #61332a;
+}
+
+h1{
+    font-weight: bold;
+}
+
+.img-honey{
+    background-image: url(assets2/imgs/honey.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+@media screen and (min-width: 800px){
+    .img-honey{
+        background-image: url(assets2/imgs/honey.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 3200px;
+        height: 300px;
+        display: flex;
+    }
+    .box-container{
+        background-color: wheat;
+        border-radius: 30px;
+        padding: 25px;
+        color: #61332a;
+        display: flex;
+        flex-direction: row-reverse;
+       
+    }
+    
+    h1{
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .paragraph{
+        font-size: 13px;
+    }
+    
+    .title-text{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+}
