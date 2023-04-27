@@ -8,3 +8,27 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+#testoAlternato{
+    font-size: 20px;
+    font-weight: bold;
+    width: 500px;
+    height: 70px;
+    border: 2px solid black;
+    padding: 30px;
+    margin: 40px;
+}
+
+@keyframes interfaccia{
+    0%{
+        transform: (0px);
+    }
+    100%{
+        transform: translate(100px);
+    }
+}
+
+@keyframes pagina1{
+    0%{
+        transform: ;
+    }
+}
