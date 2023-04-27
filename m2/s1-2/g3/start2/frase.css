@@ -9,26 +9,86 @@
 */
 
 #testoAlternato{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     width: 500px;
     height: 70px;
     border: 2px solid black;
     padding: 30px;
     margin: 40px;
+    position: relative;
 }
 
-@keyframes interfaccia{
+.parole i{
+    position: absolute;
+    padding-left: 10px;
+    color: rgb(35, 125, 125);
+}
+
+#interfaccia{
+    animation: fade1 4s infinite;
+}
+#pagina1{
+    animation: fade2 4s infinite;
+}
+#app{
+    animation: fade3 4s infinite;
+}
+
+@keyframes fade1{
     0%{
-        transform: (0px);
+        transform:translate(0,-100%);
+        opacity: 0;
+    }
+    16%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+    33%{
+        transform: translate(0,100%);
+        opacity: 0;
     }
     100%{
-        transform: translate(100px);
+        opacity: 0;
     }
 }
 
-@keyframes pagina1{
+@keyframes fade2{
     0%{
-        transform: ;
+        opacity: 0;
+    }
+    33%{
+        transform: translate(0,-100%);
+        opacity: 0;
+    }
+    50%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+    66%{
+        transform: translate(0,100%);
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
+
+@keyframes fade3{
+    0%{
+        opacity: 0;
+    }
+    66%{
+        transform: translate(0,-100%);
+        opacity: 0;
+    }
+    83%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(0,100%);
+        opacity: 0;
     }
 }
