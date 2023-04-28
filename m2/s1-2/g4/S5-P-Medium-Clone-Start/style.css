@@ -3,12 +3,19 @@ font-family: 'Roboto', sans-serif;*/
 body{
     box-sizing: border-box;
 }
-header{
+nav{
+    background-color: #ffc017;
+}
+.headerBox{
     background-color: #ffc017;
     display: flex;
+    justify-content: space-between;
 }
 /* NavBar */
 .topBar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
     display: flex;
     padding: 30px;
     border-bottom: 1px solid black;
@@ -21,19 +28,35 @@ header{
     flex-direction: row-reverse;
     flex-grow:1;
     margin-right: 300px;
+    align-items: center;
 }
 .menu button{
     cursor: pointer;
+
+}
+.buttonNav{
+    border: none;
+    background-color: #ffc017;
+}
+.get-started{
+    background-color: #191919;
+    padding: 10px;
+    border-radius: 40px;
+    color: white;
     
 }
 
 /* Title page */
+.headerBox{
+    border-bottom: 1px solid black;
+    display: flex;
+    
+}
 .stay{
     padding-top: 80px;
     padding-left: 300px;
     margin-bottom: 30px;
-    border-bottom: 1px solid black;
-    background-color: #ffc017;
+    
 }
 .stay p{
     margin-bottom: 30px;
@@ -46,12 +69,21 @@ h1{
 }
 
 .start{
-   margin-bottom: 80px;
+   margin-bottom: 60px;
+   padding: 10px 65px;
+   border-radius: 40px;
+   font-size: 20px;
+   background-color: #191919;
+   color: white;
+}
+.mmm{
+    align-self:flex-end;
+    max-width: 40%;
 }
 /* Treding on Medium */
 
 .treMed{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid grey;
     display: flex;
     flex-direction: column;
 }
@@ -108,12 +140,81 @@ color: grey;
 }
 
 /* ARTICLE */
-
+.mainArticle{
+    display: flex;
+    flex-direction: column;
+}
+.newTitle{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.paragraf{
+    color: grey;
+    margin-bottom: 8px;
+}
+.newDate{
+    color: grey;
+}
 .home{
     display: flex;
+    justify-content: space-between;
     margin-top: 50px;
 }
 
 .textHome{
     padding-left: 300px;
+    padding-right: 20px;
+}
+.misureImg{
+    width: 300px;
+}
+/* ASIDE */
+h5{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.buttonAs{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(205, 204, 204);
+    margin: 5px;
+    border: none;
+}
+.bigBox{
+    display: flex;
+}
+.asideContainer{
+    padding-left: 50px;
+    padding-top: 50px;
+    position: sticky;
+    top: 100px;
+    z-index: 50;
+}
+
+.more-topics{
+    color: #1a8917;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid lightgray;
+    font-family: 'Roboto', sans-serif;
+}
+.links{
+    color: grey;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links div{
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+
+
+/* Animazione di M */
+.letterM {
+    transition: 200ms ease-in;
+    opacity: 1;
 }
