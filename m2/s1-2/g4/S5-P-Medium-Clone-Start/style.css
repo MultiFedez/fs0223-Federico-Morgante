@@ -3,11 +3,14 @@ font-family: 'Roboto', sans-serif;*/
 body{
     box-sizing: border-box;
 }
+header{
+    background-color: #ffc017;
+    display: flex;
+}
 /* NavBar */
 .topBar{
     display: flex;
     padding: 30px;
-    background-color: #ffc017;
     border-bottom: 1px solid black;
 }
 .topBar img{
@@ -102,4 +105,15 @@ margin-bottom: 10px;
 .date{
 font-size: 12px;
 color: grey;
+}
+
+/* ARTICLE */
+
+.home{
+    display: flex;
+    margin-top: 50px;
+}
+
+.textHome{
+    padding-left: 300px;
 }
