@@ -1,2 +1,42 @@
 /*font-family: 'Spectral', serif;
 font-family: 'Roboto', sans-serif;*/
+
+.topBar{
+    display: flex;
+    padding: 30px;
+    background-color: #ffc017;
+    border-bottom: 1px solid black;
+}
+.topBar img{
+    margin-left: 300px;
+}
+.menu{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-grow:1;
+    margin-right: 300px;
+}
+.menu button{
+    cursor: pointer;
+    
+}
+.stay{
+    padding-top: 80px;
+    padding-left: 300px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid black;
+    background-color: #ffc017;
+}
+.stay p{
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+h1{
+    font-weight: bold;
+    font-size: 7em;
+    margin-bottom: 30px;
+}
+
+.start{
+   margin-bottom: 80px;
+}
