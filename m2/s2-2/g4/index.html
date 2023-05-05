@@ -8,7 +8,10 @@
   </head>
   
   <body class="bg-dark">
-    <nav class="navbar navbar-expand-lg bg-dark">
+
+                      <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg px-4 ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="Netflix-assets/assets/netflix_logo.png" height="60" alt="Logo Netflix"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,21 +44,170 @@
               <button class="btn text-light fw-bold" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
                 <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
               </svg></button>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="Netflix-assets/assets/avatar.png" height="30" alt="avatar">
+                </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="Netflix-assets/assets/kids_icon.png" height="30" alt="icona Kids">Kids</a></li>
                 </ul>
-              </li>
+              </div>
             </form>
           </div>
         </div>
       </nav>
+
+                      <!-- HEADER -->
+
+      <header>
+        <div class="container-fluid px-5">
+          <div class="row align-items-center">
+            <div class="col-2">
+              <h1 class="text-light">TV Shows</h1>
+            </div>
+            <div class="col">
+              <div class="dropdown">
+                <button class="dropdown-toggle border-light border-1 text-light mt-2  py-1 px-3 bg-black" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Genres
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                  <li><a class="dropdown-item" href="#">Comedy</a></li>
+                </ul>
+              </div>
+            </div>
+              <div class="col-2 d-flex justify-content-end align-items-center">
+                <button class="btn border-1 border-light rounded-0 text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-text-left" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                </svg></button>
+                <button class="btn border-1 border-light rounded-0 text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bounding-box" viewBox="0 0 16 16">
+                  <path d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1v2h2v6h-2v2H5v-2H3V5h2V3h6zm1-2h3v3h-3V1zm3 11v3h-3v-3h3zM4 15H1v-3h3v3zM1 4V1h3v3H1z"/>
+                </svg></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+                      <!-- MAIN  -->
+
+      <main>
+        <div class="container-fluid px-5">
+          <div class="row mt-2">
+            <div class="col-12">
+              <h3 class="text-light">Trending Now</h3>
+            </div>
+            <div class="col">
+              <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active text-center">
+                    <img src="Netflix-assets/assets/media/media0.webp" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media1.jpg" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media10.jpg" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media11.jpg" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media12.jpg" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media14.webp" class="d-inline " width="250" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Netflix-assets/assets/media/media13.jpg" class="d-inline" width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media15.jpg" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media17.jpg" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media16.webp" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media18.jpg" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media19.webp" class="d-inline " width="250" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-2">
+            <div class="col-12">
+              <h3 class="text-light">Watch it Again</h3>
+            </div>
+            <div class="col">
+              <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active text-center">
+                    <img src="Netflix-assets/assets/media/media16.webp" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media30.jpg" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media31.webp" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media32.jpg" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media28.jpg" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media29.jpg" class="d-inline " width="250" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Netflix-assets/assets/media/media4.jpg" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media5.webp" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media6.jpg" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media7.webp" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media9.jpg" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media10.jpg" class="d-inline " width="250" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-2">
+            <div class="col-12">
+              <h3 class="text-light">New Releases</h3>
+            </div>
+            <div class="col">
+              <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active text-center">
+                    <img src="Netflix-assets/assets/media/media0.webp" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media1.jpg" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media10.jpg" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media11.jpg" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media12.jpg" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media14.webp" class="d-inline " width="250" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Netflix-assets/assets/media/media13.jpg" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media15.jpg" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media17.jpg" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media16.webp" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media18.jpg" class="d-inline " width="250" alt="...">
+                    <img src="Netflix-assets/assets/media/media19.webp" class="d-inline " width="250" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   </body>
 </html>
