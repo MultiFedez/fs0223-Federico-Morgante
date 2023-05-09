@@ -3,10 +3,10 @@ body{
 }
 
 /* FORM */
-.container{
+#container{
     text-align: center;
 }
-.inserimento{
+#inserimento{
     margin-bottom: 8px;
 }
 input{
@@ -15,7 +15,7 @@ input{
 }
 
 /* BUTTON */
-.button button{
+#button button{
     border-radius: 15px;
     padding: 6px;
     width: 100px;
@@ -24,15 +24,15 @@ input{
     background-color: white;
     cursor: pointer;
 }
-.save{
+#save{
     color: rgb(0, 171, 0);
 } 
-.save:hover{
+#save:hover{
     transform: scale(1.3);
 } 
-.delete{
+#delete{
     color: red;
 }
-.delete:hover{
+#delete:hover{
     transform: scale(1.3);
 }
