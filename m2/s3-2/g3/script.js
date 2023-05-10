@@ -19,14 +19,14 @@ const renderBooks = function (books) {
   books.forEach((book) => {
     let col = document.createElement("div");
     col.classList.add("col-12", "col-lg-3");
-    col.innerHTML = `<div class="card" style="width: 18rem;">
-        <img src="${book.img}" class="card-img-top" alt="...">
-        <div class="card-body">
+    col.innerHTML = `<div class="card mb-3" style="width: 18rem";>
+        <img src="${book.img}" class="card-img-top" style="height: 350px" alt="...">
+        <div class="card-body" style="height:250px" >
             <h5 class="card-title">${book.title}</h5>
             <p class="card-text h6">${book.category}</p>
             <p class="card-text h6">${book.price}</p>
             <a href="#" class="btn btn-primary">Buy Now</a>
-            <a href="#" class="btn btn-primary">Delete</a>
+            <a href="#" id="deleteButton" class="btn btn-primary">Delete</a>
         </div>
     </div`;
     mainRow.appendChild(col);
