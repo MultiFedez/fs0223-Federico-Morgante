@@ -18,7 +18,7 @@ const renderBooks = function (books) {
   let mainRow = document.getElementById("list");
   books.forEach((book) => {
     let col = document.createElement("div");
-    col.classList.add("col-12", "col-lg-3");
+    col.classList.add("col-6", "col-md-4", "col-xl-3");
     col.innerHTML = `<div class="card mb-3" style="width: 18rem";>
         <img src="${book.img}" class="card-img-top" style="height: 350px" alt="...">
         <div class="card-body" style="height:250px" >
@@ -29,6 +29,11 @@ const renderBooks = function (books) {
             <a href="#" id="deleteButton" class="btn btn-primary">Delete</a>
         </div>
     </div`;
+
+    let deleteButton = col.querySelector("#deleteButton");
+    deleteButton.addEventListener("click", () => {
+      col.remove();
+    });
     mainRow.appendChild(col);
   });
 };
