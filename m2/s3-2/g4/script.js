@@ -14,4 +14,12 @@ fetch("https://api.pexels.com/v1/search?query=cities", {
   })
   .then((data) => {
     console.log(data);
+  })
+
+  .catch((err) => {
+    console.log(err);
   });
+
+const photo = function (data) {
+  data.forEach((photo) => {});
+};
