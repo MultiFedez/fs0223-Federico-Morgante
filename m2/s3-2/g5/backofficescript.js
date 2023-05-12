@@ -51,7 +51,8 @@ eventForm.addEventListener("submit", function (e) {
     .then((res) => {
       if (res.ok) {
         alert("Salvataggio avvenuto");
-        location.assign("/index.html");
+        console.log(res);
+        // location.assign("homepage.html");
       } else {
         alert("Errore nel salvataggio");
         throw new Error("Problema nell'eliminazione dell'evento");
