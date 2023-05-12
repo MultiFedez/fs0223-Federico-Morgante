@@ -33,8 +33,9 @@ const renderImage = function (images) {
             <h5 class="card-title">${image.name}</h5>
             <p class="card-text">${image.description}</p>
             <p class="card-text">${image.price} €</p>
+            <p class="card-text">${image.brand}</p>
             <a href="#" class="btn btn-outline-danger">BUY ME</a>
-            <a href="#" class="btn btn-outline-success">MODIFICA</a>
+            <a href="backoffice.html?productId=${image._id}" target="_blanck" class="btn btn-outline-success">MODIFICA</a>
          </div>`;
     target.appendChild(newCard);
   });

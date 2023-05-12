@@ -13,7 +13,7 @@
  <body class="bg-dark">
     <nav class="navbar navbar-expand-lg bg-dark">
       <div class="container-fluid text-light">
-        <a class="navbar-brand text-light" href="./homepage.html"> <img src="img/e-commerce-logo.webp"  height="50" alt=""> E-Commerce</a>
+        <a class="navbar-brand text-light" href="homepage.html"> <img src="img/e-commerce-logo.webp"  height="50" alt=""> E-Commerce</a>
         <button
           class="navbar-toggler bg-white "
           type="button"
@@ -31,7 +31,7 @@
               <a
                 class="nav-link active text-light"
                 aria-current="page"
-                href="./backoffice.html"
+                href="backoffice.html"
                 >Backoffice</a
               >
             </li>
@@ -43,7 +43,7 @@
     <div class="container">
       <div class="row justify-content-center mt-3">
         <div class="col-12 col-md-8 text-center">
-          <h2>Backoffice page - Nuovo Evento</h2>
+          <h2 id="mainTitle">Backoffice page - Nuovo Evento</h2>
           <form class="mt-5 text-start text-light fw-bold" id="event-form">
 
             <div class="mb-3">
@@ -61,7 +61,7 @@
                 >Description</label>
               <input
                 type="text"
-                class="form-control"
+                class="textdescription form-control"
                 id="description"
                 aria-describedby="descriptionfield"
                 required
@@ -98,15 +98,12 @@
                 required
               />
             </div>
-            <button type="submit" class="btn btn-primary" id="save-button">
-              CREA OGGETTO
+            <button type="submit" class="btn btn-primary" id="save-button">CREA OGGETTO
             </button>
             <button
               type="button"
               class="btn btn-danger d-none"
-              id="delete-button"
-            >
-              ELIMINA OGGETTO
+              id="delete-button">ELIMINA OGGETTO
             </button>
           </form>
         </div>
