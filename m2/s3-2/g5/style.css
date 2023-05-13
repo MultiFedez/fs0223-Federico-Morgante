@@ -1,7 +1,6 @@
-
-.textdescription{
+.textdescription {
     width: 250px;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis !important;
 }

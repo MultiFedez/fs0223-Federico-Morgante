@@ -27,11 +27,11 @@ const renderImage = function (images) {
   let target = document.getElementById("target");
   images.forEach((image) => {
     let newCard = document.createElement("div");
-    newCard.classList.add("card", "w-25");
+    newCard.classList.add("card","h-75","w-25","border-danger","my-3",);
     newCard.innerHTML = `<img src="${image.imageUrl}" class="card-img-top" alt="Foto Prodotto">
         <div class="card-body">
             <h5 class="card-title">${image.name}</h5>
-            <p class="card-text">${image.description}</p>
+            <p class="textdescription card-text">${image.description}</p>
             <p class="card-text">${image.price} €</p>
             <p class="card-text">${image.brand}</p>
             <a href="#" class="btn btn-outline-danger">BUY ME</a>
