@@ -4,3 +4,13 @@
     overflow: hidden;
     text-overflow: ellipsis !important;
 }
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 78, 121, 1) 42%, rgba(0, 212, 255, 1) 100%);
+}
+
+nav {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 84, 1) 48%, rgba(0, 212, 255, 1) 100%);
+}
