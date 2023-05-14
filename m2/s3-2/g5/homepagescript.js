@@ -27,7 +27,7 @@ const renderImage = function (images) {
   let target = document.getElementById("target");
   images.forEach((image) => {
     let newCard = document.createElement("div");
-    newCard.classList.add("card","col-12","col-sm-6","col-md-3","col-xl-2","bg-dark","border-danger","my-3","mx-1");
+    newCard.classList.add("card","col-12","col-sm-6","col-md-4","col-lg-3","col-xl-2","bg-dark","border-danger","my-3");
     newCard.innerHTML = `<img src="${image.imageUrl}" class="card-img-top" alt="Foto Prodotto">
         <div class="card-body">
             <h5 class="card-title text-primary">${image.name}</h5>
