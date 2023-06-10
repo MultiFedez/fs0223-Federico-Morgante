@@ -1,0 +1,14 @@
+<form action="add">
+  <input required name="title" [(ngModel)]="todo.title" [(ngModel)]="value" type="text">
+  <button (click)="addTodo()">Crea Todo</button>
+</form>
+
+<div *ngIf="loading == true">Recupero Task...</div>
+
+
+<ul>
+  <li *ngFor="let todo of todoArr">{{todo.title}} <button (click)="deleteTodo(todo.id)">X</button><button
+      (click)="completeTodo(todo.id)" *ngIf="todo.completed == false">Completa</button>
+    <p *ngIf="todo.completed == true">Completato</p>
+  </li>
+</ul>

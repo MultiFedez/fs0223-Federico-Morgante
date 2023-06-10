@@ -1,0 +1,7 @@
+<div *ngIf="loading == true">Recupero Task...</div>
+
+<ul>
+  <li *ngFor="let todo of todoArr">{{todo.title}} <button (click)="deleteTodo(todo.id)">X</button>
+    <p *ngIf="todo.completed == true">Completato</p>
+  </li>
+</ul>
