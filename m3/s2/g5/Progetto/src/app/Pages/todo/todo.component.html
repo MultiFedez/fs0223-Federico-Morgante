@@ -1,14 +1,17 @@
-<form action="add">
-  <input required name="title" [(ngModel)]="todo.title" [(ngModel)]="value" type="text">
-  <button (click)="addTodo()">Crea Todo</button>
-</form>
+<div id="contenitore">
+  <form class="formTodo" action="add">
+    <input required name="title" [(ngModel)]="todo.title" [(ngModel)]="value" type="text">
+    <button class="crea" (click)="addTodo()">Crea Todo</button>
+  </form>
 
-<div *ngIf="loading == true">Recupero Task...</div>
+  <div *ngIf="loading == true">Recupero Task...</div>
 
 
-<ul>
-  <li *ngFor="let todo of todoArr">{{todo.title}} <button (click)="deleteTodo(todo.id)">X</button><button
-      (click)="completeTodo(todo.id)" *ngIf="todo.completed == false">Completa</button>
-    <p *ngIf="todo.completed == true">Completato</p>
-  </li>
-</ul>
+  <div class="todoContainer">
+    <div class="todo" *ngFor="let todo of todoArr">
+      <h2>{{todo.title}}</h2><button (click)="completeTodo(todo.id)" *ngIf="todo.completed == false">Completa</button>
+      <p *ngIf="todo.completed == true">Completato</p>
+      <button class="bDelete" (click)="deleteTodo(todo.id)">X</button>
+    </div>
+  </div>
+</div>

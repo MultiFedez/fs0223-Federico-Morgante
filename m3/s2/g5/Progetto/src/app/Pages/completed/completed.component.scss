@@ -1,0 +1,32 @@
+.task {
+  text-align: center;
+}
+
+.completedComp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.component {
+  margin: 30px;
+  height: 250px;
+  width: 250px;
+  border: 2px solid rgb(103, 12, 103);
+  box-shadow: 0 0 10px white;
+  padding: 50px;
+  background-color: rgba(0, 212, 255, 1);
+  border-radius: 20px;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.titleCard {
+  font-size: 2em;
+}
+
+.delete {
+  background-color: red;
+}

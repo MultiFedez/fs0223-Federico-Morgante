@@ -1,7 +1,11 @@
-<div *ngIf="loading == true">Recupero Task...</div>
+<div class="task" *ngIf="loading == true">Recupero Task...</div>
 
-<ul>
-  <li *ngFor="let todo of todoArr">{{todo.title}} <button (click)="deleteTodo(todo.id)">X</button>
-    <p *ngIf="todo.completed == true">Completato</p>
-  </li>
-</ul>
+<div class="completedComp">
+  <div class="component">
+    <div *ngFor="let todo of todoArr">
+      <p class="titleCard">{{todo.title}}</p>
+      <p *ngIf="todo.completed == true">Completato</p>
+      <button class="delete" (click)="deleteTodo(todo.id)">X</button>
+    </div>
+  </div>
+</div>

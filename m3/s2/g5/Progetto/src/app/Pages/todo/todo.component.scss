@@ -1,0 +1,61 @@
+#contenitore {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.crea {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  box-shadow: 0 0 10px white;
+  background-color: rgba(0, 212, 255, 1);
+}
+
+input {
+  width: 300px;
+  height: 30px;
+  border-radius: 20px;
+  border: 2px solid rgb(103, 12, 103);
+  box-shadow: 0 0 10px white;
+  margin-right: 20px;
+}
+
+.formTodo {
+  display: flex;
+  align-items: center;
+}
+
+.todoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+  .todo {
+    margin: 30px;
+    height: 250px;
+    width: 250px;
+    border: 2px solid rgb(103, 12, 103);
+    box-shadow: 0 0 10px white;
+    padding: 50px;
+    background-color: rgba(0, 212, 255, 1);
+    border-radius: 20px;
+
+    h2 {}
+
+    p {}
+
+    .bDelete {
+      background-color: red;
+    }
+
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
