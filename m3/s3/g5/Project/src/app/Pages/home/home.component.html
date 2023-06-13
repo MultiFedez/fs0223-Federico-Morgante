@@ -1,0 +1,14 @@
+<h1>titolo</h1>
+<button [routerLink]="['add']">Aggiungi</button>
+<!-- ciclo il mio array che mi sono istanziato all'inizio -->
+<div *ngFor="let shoe of shoes" class="boh">
+
+  <p>{{shoe.title}}</p>
+  <p>{{shoe.prezzo}}</p>
+  <p>{{shoe.description}}</p>
+
+  <button [routerLink]="['singleAccomodation',shoe.id]">guarda</button>
+  <button [routerLink]="['edit',shoe.id]">modifica</button>
+  <!-- andró a crearmi un bottone che richiama la delete -->
+  <button (click)="delete(shoe.id)">Cancella</button>
+</div>

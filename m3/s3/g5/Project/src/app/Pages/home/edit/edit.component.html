@@ -1,0 +1,23 @@
+<form>
+
+  <div>
+
+    <input type="text" class="form-control" name="gusto" placeholder="Nome appartamento" [(ngModel)]="newShoes.title">
+  </div>
+
+  <div>
+
+    <input type="text" class="form-control" name="ingredients" placeholder="Inserisci la descrizione"
+      [(ngModel)]="newShoes.description">
+  </div>
+
+  <div>
+
+    <input type="number" class="form-control" name="prezzo" placeholder="Inserisci il prezzo"
+      [(ngModel)]="newShoes.prezzo">
+  </div>
+
+  <button (click)="modifica()">Aggiungi scarpa</button>
+
+</form>
+<button [routerLink]="['/']">Indietro</button>
