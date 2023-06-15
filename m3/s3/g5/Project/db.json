@@ -8,5 +8,12 @@
       "id": 1
     }
   ],
-  "shoes": []
+  "shoes": [
+    {
+      "id": 1,
+      "title": "",
+      "prezzo": 0,
+      "description": ""
+    }
+  ]
 }

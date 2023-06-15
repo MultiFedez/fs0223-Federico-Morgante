@@ -1,14 +1,34 @@
-<h1>titolo</h1>
-<button [routerLink]="['add']">Aggiungi</button>
-<!-- ciclo il mio array che mi sono istanziato all'inizio -->
-<div *ngFor="let shoe of shoes" class="boh">
+<div>
+  <h1>titolo</h1>
+  <button [routerLink]="['add']">Aggiungi</button>
+  <!-- ciclo il mio array che mi sono istanziato all'inizio -->
+  <div *ngFor="let shoe of shoes" class="boh">
 
-  <p>{{shoe.title}}</p>
-  <p>{{shoe.prezzo}}</p>
-  <p>{{shoe.description}}</p>
+    <p>{{shoe.title}}</p>
+    <p>{{shoe.prezzo}}</p>
+    <p>{{shoe.description}}</p>
 
-  <button [routerLink]="['singleAccomodation',shoe.id]">guarda</button>
-  <button [routerLink]="['edit',shoe.id]">modifica</button>
-  <!-- andró a crearmi un bottone che richiama la delete -->
-  <button (click)="delete(shoe.id)">Cancella</button>
+    <button [routerLink]="['singleAccomodation',shoe.id]">guarda</button>
+    <button [routerLink]="['edit',shoe.id]">modifica</button>
+    <!-- andró a crearmi un bottone che richiama la delete -->
+    <button (click)="delete(shoe.id)">Cancella</button>
+  </div>
 </div>
+
+<!--<div class="container">
+  <div class="row">
+    <div class="col-4" *ngFor="let shoe of shoes">
+      <div class="card">
+        <div class="card-body">
+          <img class="card-img" src="{{shoes.urlPhoto}}" alt="Card image cap">
+          <h5 class="card-title">{{shoes.title}}</h5>
+          <p class="card-text">{{shoes.description}}</p>
+          <p class="card-price">{{shoes.prezzo}}€</p>
+          <button [routerLink]="['singleAccomodation',shoes.id]">Guarda</button>
+          <button [routerLink]="['edit',shoes.id]">Modifica</button>
+          <button (click)="delete(shoes.id)">Cancella</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
