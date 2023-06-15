@@ -6,7 +6,7 @@ const routes: Routes = [
   /* cosi'all'avvio mi manda direttamente all'home */
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'auth', loadChildren: () => import('./Pages/auth/auth.module').then(m => m.AuthModule) },
-  { path: 'Home', loadChildren: () => import('./Pages/home/home.module').then(m => m.HomeModule) },
+  { path: 'home', loadChildren: () => import('./Pages/home/home.module').then(m => m.HomeModule), canActivate: [AuthGuard] },
 ];
 
 @NgModule({

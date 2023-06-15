@@ -1,4 +1,12 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "federico@fede.it",
+      "password": "$2a$10$mTaCZxT8zQPhBwhfVaQKC.1xuFvdYVCfX.iS2gljcDWD3nmRzvI2m",
+      "name": "Fede",
+      "surname": "Morg",
+      "id": 1
+    }
+  ],
   "shoes": []
 }
