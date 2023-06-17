@@ -1,0 +1,75 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: changeBackground 16s infinite ease-in-out;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat-;
+}
+
+@keyframes changeBackground {
+  0% {
+    background-image: url("https://static.wixstatic.com/media/19d326_2e67bd3963294bc1be7b2310da8c2162~mv2.jpg/v1/fill/w_640,h_426,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/19d326_2e67bd3963294bc1be7b2310da8c2162~mv2.jpg");
+  }
+  33% {
+    background-image: url("https://www.grecia.info/wp-content/uploads/sites/71/appartamenti-studios-grecia.jpg");
+  }
+  66% {
+    background-image: url("https://www.scent-of-sicily.it/wp-content/uploads//2020/07/casa-vacanze-sicilia-villa-framar-santa-maria.jpg");
+  }
+  100% {
+    background-image: url("https://i2.res.24o.it/images2010/Editrice/ILSOLE24ORE/ILSOLE24ORE/2019/08/13/Politica%20e%20societa/ImmaginiWeb/Ritagli/AdobeStock_164081451-U2034080443WvG--1020x533@IlSole24Ore-Web.jpeg");
+  }
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 600px;
+  height: 400px;
+  padding: 40px;
+  border-radius: 5px;
+  background-color: rgb(235, 233, 233);
+  box-shadow: 0px 2px 15px 2px rgba(black, 0.68);
+}
+
+#muteCheckbox {
+  display: none;
+}
+
+#muteCheckbox + label::before {
+  content: "Muta";
+  background-color: gray;
+  color: white;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+#muteCheckbox:checked + label::before {
+  content: "Attiva audio";
+  background-color: gray;
+}
+
+/*
+.btn {
+  margin-top: 10px;
+} */
+
+/* .btn2{
+  border: 1px solid black;
+  background-color: white;
+}
+
+.btn2:hover{
+  background-color: blue;
+  color: white;
+} */

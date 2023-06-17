@@ -1,0 +1,36 @@
+<div class="main d-flex justify-content-center align-items-center">
+
+  <div class="federico">
+
+    <form [formGroup]="form" class="form-control">
+      <div>
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" name="title" placeholder="Nome appartamento" formControlName="title">
+      </div>
+      <div>
+        <label for="description">Descrizione</label>
+        <input type="text" class="form-control" name="ingredients" placeholder="Inserisci la descrizione" formControlName="description">
+      </div>
+      <div>
+        <label for="prezzo">Prezzo</label>
+        <input type="number" class="form-control" name="prezzo" placeholder="Inserisci il prezzo" formControlName="prezzo">
+      </div>
+      <div>
+        <label for="description">Foto principale</label>
+        <input type="text" class="form-control" name="foto" placeholder="Inserisci la foto" formControlName="urlPhoto">
+      </div>
+      <div formArrayName="urlPhoto2" class="mt-2">
+        <label for="nome">Foto aggiuntive</label>
+        <button (click)="addPhotos()" class="btn btn-outline-primary ms-4">Aggiungi Foto</button>
+        <div *ngFor="let photo of getPhotos(), let i = index">
+          <input class="form-control" [formControlName] = "i">
+        </div>
+      </div>
+      <button class="btn btn-primary my-3" (click)="create()">Aggiungi appartamento</button>
+    </form>
+    <div class="text-center">
+      <button class="btn btn-link text-dark text-decoration-none" [routerLink]="['/']">Indietro</button>
+    </div>
+  </div>
+
+</div>

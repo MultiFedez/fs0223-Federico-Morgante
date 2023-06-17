@@ -1,0 +1,67 @@
+//NAVBAR
+.topnav {
+  overflow: hidden;
+  background: rgb(34,193,195);
+  background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(245,189,69,1) 100%);
+  /* position:sticky; */
+  z-index: 1;
+  width: 100%;
+  a {
+  /* float: left;
+  display: block; */
+  color: black;
+  text-align: center;
+  /* padding: 14px 16px; */
+  text-decoration: none;
+  font-size: 17px;
+  }
+  a:hover {
+    background-color: #f5bd45;
+    color: white;
+  }
+  .addButton{
+    color: #FF385C;
+  }
+  .addButton:hover{
+    background-color: #FF385C;
+    color: black;
+  }
+
+}
+
+
+//CARD
+
+.card{
+  margin: 10px;
+
+  img {
+    width: 30px;
+    margin: auto;
+  }
+  .card-img{
+    width: 100%;
+    border-radius: 10px;
+  }
+  .card-title{
+    font-size: large;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  .card-price{
+    font-weight: bold;
+  }
+  button{
+    margin-left: 5px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color:burlywood;
+  }
+  button:hover {
+    background-color:darkgoldenrod ;
+    color: black;
+  }
+}
+
+

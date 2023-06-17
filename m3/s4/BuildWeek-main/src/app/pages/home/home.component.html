@@ -1,0 +1,61 @@
+<!-- NAVBAR -->
+
+<!-- <div class="topnav">
+  <a [routerLink]="['/']">Home</a>
+  <a [routerLink]="['add']" class="addButton">Aggiungi Appartamento</a>
+  <img src="https://img.freepik.com/free-vector/colorful-bird-illustration-gradient_343694-1741.jpg?w=996&t=st=1686846868~exp=1686847468~hmac=adbf8dbcf1f31a4b06f4fd68c046ff8ea8b026cec3f9e3ce37f7c317abd905d1" alt="img">
+  <div class="d-flex">
+    <p>{{nomeUtente}}</p>
+    <button (click)="fede()">LogOut</button>
+  </div>
+</div> -->
+
+
+<nav class="navbar bg-body-tertiary topnav sticky-top align-items-baseline ">
+  <div class="container">
+    <a class="navbar-brand">
+      <img src="../../../assets/bird_2-removebg-preview.png" alt="HBW-logo" width="70" height="50">
+    </a>
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row">
+    <li class="nav-item ms-4">
+      <a class="nav-link" aria-current="page" [routerLink]="['/']">Home</a>
+    </li>
+    <li class="nav-item ms-4">
+      <a class="nav-link" aria-current="page" [routerLink]="['add']">Aggiungi Appartamento</a>
+    </li>
+  </ul>
+  <div class="d-flex align-items-baseline flex-row">
+    <p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
+      viewBox="0 0 16 16">
+      <path
+      d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+    </svg>
+      {{nomeUtente}}</p>
+    <button class="btn m-0" (click)="fede()">LogOut</button>
+  </div>
+</div>
+</nav>
+
+<!-- CARDS -->
+<!-- ciclo il mio array che mi sono istanziato all'inizio -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-4" *ngFor="let appartament of appartaments">
+      <div class="card">
+        <div class="card-body">
+          <img class="card-img" [src]="appartament.urlPhoto" alt="Card image cap">
+          <h5 class="card-title">{{appartament.title}}</h5>
+          <p class="card-text">{{appartament.description}}</p>
+          <p class="card-price">{{appartament.prezzo}}€</p>
+          <button [routerLink]="['singleAccomodation',appartament.id]">Guarda</button>
+          <button [routerLink]="['edit',appartament.id]">Modifica</button>
+          <button (click)="delete(appartament.id)">Cancella</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

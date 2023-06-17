@@ -1,0 +1,108 @@
+{
+  "users": [
+    {
+      "email": "simone@simone.it",
+      "password": "$2a$10$82x.w2Z3ZEgqFD3P9k2l8OARL2Ds1ayMH8ExhItwkB7LEuNKmhh3q",
+      "name": "simone",
+      "surname": "simone",
+      "id": 1
+    },
+    {
+      "email": "mari@mari.it",
+      "password": "$2a$10$hAt2QBOAv30Cv46TiGVCGuO5jUld0gDDgNC3FWXzsuU1wJ3zi5sja",
+      "name": "mari",
+      "surname": "mari",
+      "id": 2
+    },
+    {
+      "email": "francesca@gmail.com",
+      "password": "$2a$10$sydMyCBILhxP.3s.sNSoDeSLYWTVYLM/vT2I68y2tMsIQcElgqZdG",
+      "name": "francesca",
+      "surname": "carella",
+      "id": 3
+    }
+  ],
+  "accomodations": [
+    {
+      "title": " Suite, Lecce",
+      "prezzo": 80,
+      "description": "La villetta offre tutti i comfort per rendere la vostra vacanza speciale e gode di una posizione strategica.",
+      "urlPhoto": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/209555510.jpg?k=b341fc3a5880e5593ce0f113a5738b2ece5eebee8fbb98d90cecc6f79bb21f05&o=&hp=1",
+      "urlPhoto2": [],
+      "id": 5
+    },
+    {
+      "title": "Appartamento, Roma",
+      "prezzo": 105,
+      "description": "Luminoso e accogliente appartamento. Nella zona anteriore è presente una veranda ornata con aiuole.",
+      "urlPhoto": "https://cdn.dove.it/properties/1132/medium/appartamento-in-vendita-roma-via-acherusio29.jpg",
+      "urlPhoto2": [],
+      "id": 6
+    },
+    {
+      "title": "Casa, Toscana",
+      "prezzo": 60,
+      "description": "La casa si trova in un tranquillo paesino Toscano dalla posizione strategica, vicino a tutti i punti d'interesse.",
+      "urlPhoto": "https://www.casadera.it/wp-content/uploads/2018/10/Casadera_Butterfly_12-1024x683.jpg",
+      "urlPhoto2": [],
+      "id": 7
+    },
+    {
+      "title": "Appartamento, Verona",
+      "prezzo": 77,
+      "description": "Situata nel cuore di San Giovanni Lupatoto e a 15 minuti dal centro storico di Verona si trova questa elegante casa recentemente ristrutturata e arredata con cura nei minimi dettagli.",
+      "urlPhoto": "https://www.casaeverona.it/_upload/_big/1652395217.7023_33279_0.jpg",
+      "urlPhoto2": [],
+      "id": 8
+    },
+    {
+      "title": "Loft, Cagliari",
+      "prezzo": 45,
+      "description": "La struttura si trova ad un passo dalle fermate del bus che portano nel centro citta. L'alloggio possiede un parcheggio privato che da la possibilità di tenere al sicuro la propria auto.",
+      "urlPhoto": "https://a0.muscache.com/im/pictures/prohost-api/Hosting-816389312085618122/original/017efcea-a812-48d8-a2c1-2dacc27fc130.jpeg?im_w=720",
+      "urlPhoto2": [],
+      "id": 9
+    },
+    {
+      "title": "Alloggio, Liguria",
+      "prezzo": 60,
+      "description": "Soggiornando in questa abitazione, sarete a pochissimi minuti dalle spiagge varazzine, pur rimanendo fuori dal caos, immersi nella tranquillità di questa area verde.",
+      "urlPhoto": "https://www.agenziarivieradeisogni.com/Includes/themes/intenserivieradeisogni/it/images/localita-sanremo.jpg",
+      "urlPhoto2": [],
+      "id": 10
+    },
+    {
+      "title": "Casa, Amalfi",
+      "prezzo": 150,
+      "description": "Un luogo tranquillo in cui potersi godere un panorama mozzafiato lontano dal caos ma con la possibilità di poter raggiungere rapidamente il centro.",
+      "urlPhoto": "https://media-cdn.tripadvisor.com/media/vr-splice-j/01/1d/e2/ab.jpg",
+      "urlPhoto2": [
+        "https://www.besidebathrooms.com/wp-content/uploads/bagno-casa-al-mare-minimal-coastal-2.jpg",
+        "https://www.sicilymyhome.com/affitti/fotos/2/15894974740e138baa0341f8ab2855dde8712f862a/162791931145179e13197e54f2cd5f9e9efabe4a84.jpg"
+      ],
+      "id": 11
+    },
+    {
+      "title": "Residence, Sicilia",
+      "prezzo": 120,
+      "description": "Accogliente casa vacanze con ampia terrazza in una zona tranquilla e isolata. Il locale è stato ristrutturato e rinnovato per essere adibito ad abitazione.",
+      "urlPhoto": "https://www.baglioridisicilia.com/wp-content/uploads/2017/01/ADP1055.jpg",
+      "urlPhoto2": [
+        "https://www.instapro.it/images/cms/original/0c175209-bbfc-4698-9148-e5ea9b5c051e.jpg",
+        "https://pensarecasa.it/wp-content/uploads/2022/08/cucina_piccola_penisola_seconda_vista_pensarecasa.it_.jpg"
+      ],
+      "id": 12
+    },
+    {
+      "title": "Chalet, Dolomiti",
+      "prezzo": 190,
+      "description": "Ideale per una vacanza all'insegna del rilassamento e del silenzio, il nostro piccolo Chalet si trova in mezzo ai prati dell'Alpe Lusia, a 2000 mt di altezza. ",
+      "urlPhoto": "https://www.villedasogno.net/wp-content/uploads/2019/03/08/Chalet-Dolomiti-12-1140x760.jpg",
+      "urlPhoto2": [
+        "https://www.ideadesigncasa.org/wp-content/uploads/2019/11/cucine-piccole-moderne-33.jpg",
+        "https://www.canuto.it/impresaediletorino/wp-content/uploads/2015/02/Bagno-Legno-2.jpg"
+      ],
+      "id": 13
+    }
+  ]
+}

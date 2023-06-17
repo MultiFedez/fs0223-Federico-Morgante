@@ -1,0 +1,65 @@
+<form class="editform" [formGroup]="form">
+  <h1>MODIFICA LE INFORMAZIONI DEL TUO APPARTAMENTO</h1>
+  <div class="container">
+
+    <div class="internalcont">
+      <p>Modifica il nome del tuo appartamento</p>
+      <input type="text" class="form-control" name="titolo" placeholder="Inserisci il nome dell'appartamento"
+        formControlName="title">
+    </div>
+
+    <div class="internalcont">
+      <p>Modifica la descrizione</p>
+      <input type="text" class="form-control" name="descrizione" placeholder="Inserisci la descrizione"
+        formControlName="description">
+    </div>
+
+    <div class="internalcont">
+      <p>Modifica il prezzo per notte</p>
+      <input type="number" class="form-control" name="prezzo" placeholder="Inserisci il prezzo"
+        formControlName="prezzo">
+    </div>
+
+    <div class="internalcont">
+      <p>Modifica l'immagine del tuo appartamento</p>
+      <input type="url" class="form-control" name="url" placeholder="Inserisci la foto" formControlName="urlPhoto">
+    </div>
+
+    <div formArrayName="urlPhoto2">
+      <p>Modifica le altre immagini</p>
+      <div *ngFor="let photo of getPhotos(), let i = index" class="internalcont" >
+        <input type="url" class="form-control w-100" [name]="i" placeholder="Inserisci la foto" [formControlName]="i">
+      </div>
+    </div>
+  </div>
+
+  <div class="buttons" (click)="modifica()">
+    <button class="blob-btn">
+      Modifica le informazioni
+      <span class="blob-btn__inner">
+        <span class="blob-btn__blobs">
+          <span class="blob-btn__blob"></span>
+          <span class="blob-btn__blob"></span>
+          <span class="blob-btn__blob"></span>
+          <span class="blob-btn__blob"></span>
+        </span>
+      </span>
+    </button>
+    <br />
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo">
+          </feColorMatrix>
+          <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+        </filter>
+      </defs>
+    </svg>
+  </div>
+  <div class="btncont">
+    <button class="btn2" type="button" [routerLink]="['/']">Indietro</button>
+  </div>
+</form>
+
