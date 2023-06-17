@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Ilogin } from 'src/app/interfaces/ilogin';
 import { AuthService } from '../auth.service';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,13 @@ export class LoginComponent {
     email: '',
     password: ''
   }
-  constructor(private authSvc: AuthService, private router: Router) { }
+
+  audio: any;
+
+  constructor(private authSvc: AuthService, private router: Router, private sanitizer: DomSanitizer) {
+
+    this.audio = new Audio("./../../../../assets/maro-jump-sound-effect_1.mp3")
+  }
 
   login() {
     this.authSvc.login(this.data)
@@ -22,5 +29,9 @@ export class LoginComponent {
         this.router.navigate(['../../home']);
       }
       )
+  }
+
+  playAudio() {
+    this.audio.play()
   }
 }

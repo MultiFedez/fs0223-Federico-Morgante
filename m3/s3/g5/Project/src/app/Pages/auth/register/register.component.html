@@ -1,23 +1,21 @@
-<form>
+<div class="cardReg">
+  <form class="containerReg">
 
-  <div>
-    <input class="form-control" type="email" placeholder="Inserisci la tua email" name="email" [(ngModel)]="data.email">
-  </div>
+    <div class="inputReg">
+      <input class="form-control" type="email" placeholder="Inserisci la tua email" name="email"
+        [(ngModel)]="data.email">
 
-  <div>
-    <input class="form-control" type="password" placeholder="Inserisci la tua password" name="password"
-      [(ngModel)]="data.password">
-  </div>
+      <input class="form-control" type="password" placeholder="Inserisci la tua password" name="password"
+        [(ngModel)]="data.password">
 
-  <div>
-    <input class="form-control" type="text" placeholder="Il tuo Nome" name="name" [(ngModel)]="data.name">
-  </div>
+      <input class="form-control" type="text" placeholder="Il tuo Nome" name="name" [(ngModel)]="data.name">
 
-  <div>
-    <input class="form-control" type="text" placeholder="Il tuo Cognome" name="surname" [(ngModel)]="data.surname">
-  </div>
+      <input class="form-control" type="text" placeholder="Il tuo Cognome" name="surname" [(ngModel)]="data.surname">
+    </div>
 
-  <!-- il bottone nei formModule mi attiva i form -->
-  <button (click)="mari()">Registrati</button>
-
-</form>
+    <!-- il bottone nei formModule mi attiva i form -->
+    <div>
+      <button (click)="mari()">Registrati</button>
+    </div>
+  </form>
+</div>
