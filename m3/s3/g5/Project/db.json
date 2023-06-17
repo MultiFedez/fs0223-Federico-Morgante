@@ -6,6 +6,13 @@
       "name": "Fede",
       "surname": "Morg",
       "id": 1
+    },
+    {
+      "email": "fede@fede.it",
+      "password": "$2a$10$jKHUNO0AdCBpGDOWlqxVMu9dRN7ZRwpRsH1M9c0.sJtrbXoQClbN6",
+      "name": "Federico",
+      "surname": "Morgante",
+      "id": 2
     }
   ],
   "shoes": []
