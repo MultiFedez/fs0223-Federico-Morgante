@@ -1,0 +1,38 @@
+// CONTENITORE
+.containerAuth {
+  background-color: rgb(21, 156, 111);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// TASTO LOGIN
+.log {
+  width: 250px;
+  height: 55px;
+  font-family: 'Minecraft', sans-serif;
+  font-size: 20px;
+  color: blue;
+}
+
+.log:hover {
+  width: 300px;
+  height: 80px;
+  font-size: 30px;
+}
+
+// TASTO REGISTER
+.reg {
+  width: 250px;
+  height: 55px;
+  font-family: 'Minecraft', sans-serif;
+  font-size: 20px;
+  color: rgb(24, 183, 0);
+}
+
+.reg:hover {
+  width: 300px;
+  height: 80px;
+  font-size: 30px;
+}

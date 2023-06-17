@@ -1,17 +1,26 @@
-<form>
+<div class="cardLog">
+  <form class="containerLog">
 
-  <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label text-white">Email address</label>
-    <input class="form-control" type="email" placeholder="Inserisci la tua email!" name="email"
-      [(ngModel)]="data.email">
-  </div>
+    <div class="mail">
+      <label for="exampleFormControlInput1" class="">Email address</label>
+      <input class="" type="email" placeholder="Inserisci la tua email!" name="email" [(ngModel)]="data.email">
+    </div>
 
-  <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label text-white">Password</label>
-    <input class="form-control" type="password" placeholder="Inserisci la tua password" name="password"
-      [(ngModel)]="data.password">
-  </div>
+    <div class="password">
+      <label for="exampleFormControlInput1" class="">Password</label>
+      <input class="" type="password" placeholder="Inserisci la tua password" name="password"
+        [(ngModel)]="data.password">
+    </div>
 
-  <button (click)="login()" class="btn btn-primary">Login</button>
+    <div class="butCenter">
+      <button (click)="login()" class="logButton">Login</button>
+    </div>
 
-</form>
+    <div class="mario">
+      <img
+        src="https://i.seadn.io/gae/eZhgBuNKU40SN2QuFnpbgV-fzCqNf46_E74uM-MM1d1O7WhyooM3R9pJrA8eEMqGSJaCWR4WbClZah78ubLu5D_WwopZmwWti-pa?auto=format&dpr=1&w=1000"
+        alt="img Super Mario">
+    </div>
+
+  </form>
+</div>

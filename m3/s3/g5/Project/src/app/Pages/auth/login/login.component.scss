@@ -1,0 +1,78 @@
+// CARD
+.cardLog {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: brown;
+}
+
+// FORM CONTEINER
+.containerLog {
+  font-family: 'Minecraft', sans-serif;
+  width: 500px;
+  height: 350px;
+  background-color: black;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+// EMAIL
+.mail {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+// PASSWORD
+.password {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+// BUTTON
+.logButton {
+  font-family: 'Minecraft', sans-serif;
+  width: 80px;
+  height: 40px;
+  font-size: 20px;
+  background-color: brown;
+  color: goldenrod;
+}
+
+.logButton:hover {
+  width: 100px;
+  height: 60px;
+}
+
+.butCenter {
+  display: flex;
+  justify-content: center;
+}
+
+// LABEL
+label {
+  margin-bottom: 10px;
+  color: goldenrod;
+}
+
+// IMG SUPER MARIO
+img {
+  width: 80px;
+  height: 80px;
+}
+
+img:hover {
+  width: 100px;
+  height: 100px;
+}
+
+.mario {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
