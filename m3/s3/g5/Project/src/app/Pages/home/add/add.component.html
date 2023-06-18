@@ -1,23 +1,21 @@
-<form>
-
-  <div>
-
-    <input type="text" class="form-control" name="gusto" placeholder="Nome Scarpa" [(ngModel)]="newShoes.title">
-  </div>
-
-  <div>
-
-    <input type="text" class="form-control" name="ingredients" placeholder="Inserisci la descrizione"
-      [(ngModel)]="newShoes.description">
-  </div>
-
-  <div>
-
-    <input type="number" class="form-control" name="prezzo" placeholder="Inserisci il prezzo"
-      [(ngModel)]="newShoes.prezzo">
-  </div>
-
-  <button (click)="create()">Aggiungi Scarpe</button>
-
-</form>
-<button [routerLink]="['/']">Indietro</button>
+<div class="cardAdd">
+  <form class="containerAdd">
+    <div class="inputAdd">
+      <input type="text" class="form-control" name="foto" placeholder="Inserisci la foto">
+      <input type="text" class="form-control" name="nome" placeholder="Nome Scarpa" [(ngModel)]="newShoes.title">
+      <input type="text" class="form-control" name="descrizione" placeholder="Inserisci la descrizione"
+        [(ngModel)]="newShoes.description">
+      <input type="number" class="form-control" name="prezzo" placeholder="Inserisci il prezzo"
+        [(ngModel)]="newShoes.prezzo">
+    </div>
+    <div class="butAdd">
+      <button class="addShoes" (click)="create()">Aggiungi Scarpe</button>
+      <button class="back" [routerLink]="['/']">Indietro</button>
+    </div>
+    <div class="parker">
+      <img
+        src="../../../../assets/marvel-character-spider-man-posing-upside-down-in-a-spider-web-in-a-familiar-red-and-blue-costume-wallpaper-640x1136_163-removebg-preview.png"
+        alt="img Spiderman">
+    </div>
+  </form>
+</div>

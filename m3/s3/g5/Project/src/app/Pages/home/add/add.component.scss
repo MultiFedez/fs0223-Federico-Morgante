@@ -1,0 +1,53 @@
+.cardAdd {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: grey;
+}
+
+.containerAdd {
+  font-family: 'Minecraft', sans-serif;
+  width: 600px;
+  height: 550px;
+  background-color: rgb(51, 249, 77);
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.inputAdd {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 15px;
+}
+
+.butAdd {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.addShoes {
+  width: 150px;
+  height: 60px;
+  background-color: rgb(3, 3, 166);
+  color: white;
+}
+
+.back {
+  width: 100px;
+  background-color: rgb(199, 0, 0);
+  color: white;
+}
+
+img {
+  width: 150px;
+}
+
+.parker {
+  padding-left: 85px;
+}

@@ -1,3 +1,4 @@
+// CARD PAGINA REGISTER
 .cardReg {
   display: flex;
   justify-content: center;
@@ -6,31 +7,32 @@
   background-color: grey;
 }
 
+// FORM CONTAINER
 .containerReg {
   font-family: 'Minecraft', sans-serif;
   width: 500px;
-  height: 350px;
+  height: 400px;
   background-color: rgb(83, 83, 255);
   padding-top: 50px;
   padding-left: 20px;
   padding-right: 20px;
-
 }
 
+// CONTENITORE DEGLI INPUT
 .inputReg {
   display: flex;
   flex-direction: column;
-  width: auto;
 }
 
 input {
   margin-bottom: 15px;
 }
 
+// CONTENITORE BOTTONE E IMMAGINE
 .registerBut {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .butReg {

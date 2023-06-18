@@ -11,9 +11,9 @@
 .containerLog {
   font-family: 'Minecraft', sans-serif;
   width: 500px;
-  height: 350px;
+  height: 400px;
   background-color: black;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -23,15 +23,13 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
-  font-size: 30px;
 }
 
 // PASSWORD
 .password {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
-  font-size: 30px;
+  margin-bottom: 30px;
 }
 
 // BUTTON
@@ -46,7 +44,7 @@
 
 .logButton:hover {
   width: 100px;
-  height: 60px
+  height: 50px
 }
 
 .butCenter {
@@ -58,6 +56,7 @@
 label {
   margin-bottom: 10px;
   color: goldenrod;
+  font-size: 30px;
 }
 
 // IMG SUPER MARIO

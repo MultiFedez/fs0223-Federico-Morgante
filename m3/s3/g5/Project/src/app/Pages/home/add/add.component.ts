@@ -13,7 +13,7 @@ export class AddComponent {
     id: 0,
     title: '',
     prezzo: 0,
-    description: ''
+    description: '',
   }
 
   constructor(private homeSvc: HomeService, private router: Router) { }
