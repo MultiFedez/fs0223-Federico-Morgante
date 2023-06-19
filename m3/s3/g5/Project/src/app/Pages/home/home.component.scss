@@ -1,0 +1,23 @@
+.tot {
+  background-color: black;
+}
+
+.container {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(13, 149, 64, 1) 0%, rgba(94, 13, 149, 1) 100%);
+  ;
+}
+
+.card {
+  height: 700px;
+  border: 2px solid rgb(103, 12, 103);
+  box-shadow: 0 0 10px white;
+}
+
+.buttHome {
+  height: 150px;
+}
+
+h1 {
+  margin-top: 30px !important;
+}

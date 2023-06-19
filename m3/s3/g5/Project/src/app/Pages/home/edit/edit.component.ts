@@ -13,20 +13,26 @@ export class EditComponent {
     id: 0,
     title: '',
     prezzo: 0,
-    description: ''
+    description: '',
+    image: '',
   }
 
   constructor(private homeSvc: HomeService, private router: Router, private route: ActivatedRoute) { }
   ngOnInit() {
+    console.log(this.route.params);
+
     this.route.params
       .subscribe((params: any) => {
-        this.homeSvc.getSingola(params.id).subscribe((Shoes) => this.newShoes = Shoes)
+        this.homeSvc.getSingola(params.id).subscribe((Shoes) => {
+          this.newShoes = Shoes
+          console.log(params.id, this.newShoes);
+        })
       })
   }
 
   modifica() {
     return this.homeSvc.put(this.newShoes).subscribe(data => {
-      this.router.navigate(['/'])
+      this.router.navigate(['/home'])
     })
   }
 

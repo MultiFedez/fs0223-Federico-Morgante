@@ -1,17 +1,30 @@
-<div>
-  <h1>titolo</h1>
-  <button [routerLink]="['add']">Aggiungi</button>
-  <!-- ciclo il mio array che mi sono istanziato all'inizio -->
-  <div *ngFor="let shoe of shoes" class="boh">
+<div class="tot">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center align-items-center">
+        <h1 class="d-inline my-4" *ngIf="user.client == true">Benvenuto {{user.name}} {{user.surname}}</h1>
+        <h1 class="d-inline my-4" *ngIf="user.client == false">Bentornato Admin</h1>
+        <button (click)="logout()" class="btn btn-danger w-25 d-inline mx-3 my-3">Logout</button>
+        <button [routerLink]="['add']" *ngIf="user.client !== true"
+          class="btn btn-success w-25 d-inline mx-3 my-3">Aggiungi</button>
+      </div>
+    </div>
+    <div class="row">
+      <div *ngFor="let shoe of shoes" class="col-4 p-2 ">
+        <div class="card p-2 ">
+          <img src="{{shoe.image}}" alt="">
+          <p>Title : {{shoe.title}}</p>
+          <p>Price : {{shoe.prezzo}} €</p>
+          <p>Description : {{shoe.description}}</p>
 
-    <p>{{shoe.title}}</p>
-    <p>{{shoe.prezzo}}</p>
-    <p>{{shoe.description}}</p>
-
-    <button [routerLink]="['singleAccomodation',shoe.id]">guarda</button>
-    <button [routerLink]="['edit',shoe.id]">modifica</button>
-    <!-- andró a crearmi un bottone che richiama la delete -->
-    <button (click)="delete(shoe.id)">Cancella</button>
+          <div class="buttHome d-flex justify-content-center align-items-end">
+            <button class="btn btn-primary" [routerLink]="['/home','edit',shoe.id]"
+              *ngIf="user.client !== true">modifica</button>
+            <button class="btn btn-danger" (click)="delete(shoe.id)" *ngIf="user.client !== true">Cancella</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 

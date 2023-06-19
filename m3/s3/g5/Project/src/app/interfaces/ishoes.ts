@@ -3,4 +3,5 @@ export interface Ishoes {
   title: string;
   prezzo: number;
   description: string;
+  image: string;
 }

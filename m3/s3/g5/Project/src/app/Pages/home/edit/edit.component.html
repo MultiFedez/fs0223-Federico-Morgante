@@ -1,23 +1,31 @@
-<form>
-
-  <div>
-
-    <input type="text" class="form-control" name="gusto" placeholder="Nome appartamento" [(ngModel)]="newShoes.title">
+<div class="editAll">
+  <div class="cardEdit">
+    <form class="containerEdit">
+      <div class="inputEdit">
+        <input type="text" class="form-control" name="image" placeholder="Inserisci la foto"
+          [(ngModel)]="newShoes.image">
+        <input type="text" class="form-control" name="title" placeholder="Nome Scarpa" [(ngModel)]="newShoes.title">
+        <input type="text" class="form-control" name="description" placeholder="Inserisci la descrizione"
+          [(ngModel)]="newShoes.description">
+        <input type="number" class="form-control" name="prezzo" placeholder="Inserisci il prezzo"
+          [(ngModel)]="newShoes.prezzo">
+      </div>
+      <div class="butEdit mt-3">
+        <button class="btn btn-success" (click)="modifica()">modifica Scarpa</button>
+        <button class="btn btn-danger" [routerLink]="['/']">Indietro</button>
+      </div>
+    </form>
   </div>
 
-  <div>
+  <div class="d-flex justify-content-center align-items-center my-5">
+    <div class="card ">
+      <img src="{{newShoes.image}}" alt="">
+      <p>{{newShoes.title}}</p>
+      <p>{{newShoes.prezzo}}</p>
+      <p>{{newShoes.description}}</p>
 
-    <input type="text" class="form-control" name="ingredients" placeholder="Inserisci la descrizione"
-      [(ngModel)]="newShoes.description">
+      <button>modifica</button>
+      <button>Cancella</button>
+    </div>
   </div>
-
-  <div>
-
-    <input type="number" class="form-control" name="prezzo" placeholder="Inserisci il prezzo"
-      [(ngModel)]="newShoes.prezzo">
-  </div>
-
-  <button (click)="modifica()">Aggiungi scarpa</button>
-
-</form>
-<button [routerLink]="['/']">Indietro</button>
+</div>

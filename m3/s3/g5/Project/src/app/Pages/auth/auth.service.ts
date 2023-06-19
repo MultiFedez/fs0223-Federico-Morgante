@@ -22,7 +22,7 @@ export class AuthService {
   user$ = this.authSubject.asObservable();
   isLoggedIn$ = this.user$.pipe(map(user => !!user));
 
-  constructor(private http: HttpClient, private router: Router) {/*this.restoreUser() */ }
+  constructor(private http: HttpClient, private router: Router) { this.restoreUser() }
 
   register(utenteregistrato: Iregister) {
     return this.http.post<Iauth>(this.registerUrl, utenteregistrato)
@@ -40,6 +40,7 @@ export class AuthService {
   logout() {
     localStorage.removeItem('user');
     this.authSubject.next(null)
+    this.router.navigate(['/auth']);
   }
 
   autoLogTimer!: any

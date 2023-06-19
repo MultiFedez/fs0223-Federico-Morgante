@@ -14,6 +14,7 @@ export class AddComponent {
     title: '',
     prezzo: 0,
     description: '',
+    image: ''
   }
 
   constructor(private homeSvc: HomeService, private router: Router) { }

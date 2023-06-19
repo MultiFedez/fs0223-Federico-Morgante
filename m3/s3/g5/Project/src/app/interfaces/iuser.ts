@@ -3,4 +3,5 @@ export interface Iuser {
   email: string;
   name: string;
   surname: string;
+  client: boolean
 }

@@ -19,7 +19,8 @@ export class RegisterComponent {
     email: '',
     password: '',
     name: '',
-    surname: ''
+    surname: '',
+    client: false
   }
   audio: any;
 

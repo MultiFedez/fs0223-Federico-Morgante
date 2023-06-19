@@ -3,4 +3,5 @@ export interface Iregister {
   password: string;
   name: string;
   surname: string;
+  client: boolean
 }

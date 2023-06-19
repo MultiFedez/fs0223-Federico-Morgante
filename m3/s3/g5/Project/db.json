@@ -13,7 +13,74 @@
       "name": "Federico",
       "surname": "Morgante",
       "id": 2
+    },
+    {
+      "email": "andrea@andrea.it",
+      "password": "$2a$10$nU6FOYtIq4StX9QXvVTE9ei9eRa8AP6k6fJqErJ3SOVEt8Vd/mCOe",
+      "name": "andrea",
+      "surname": "bardi",
+      "client": true,
+      "id": 3
+    },
+    {
+      "email": "fedez@fedez.it",
+      "password": "$2a$10$C4l.8WbBCUM30i5TKt1SUufyicavZ4.hQkid.aSy8KewTkVvphAtC",
+      "name": "fedez",
+      "surname": "morg",
+      "client": false,
+      "id": 4
+    },
+    {
+      "email": "Fra@fra.it",
+      "password": "$2a$10$E5pwjyNgrHcwRAUInA0kS.LtHXSmMNSBKTL.sMgWTK7.1PooSNsha",
+      "name": "fra",
+      "surname": "fra",
+      "client": true,
+      "id": 5
     }
   ],
-  "shoes": []
+  "shoes": [
+    {
+      "id": 1,
+      "title": "air law",
+      "prezzo": 59,
+      "description": "Materiale: pelle PU, cotone e gomma Caratteristiche: Leggero, confortevole, traspirante, un po 'stretto (taglie asiatiche), chic ed elegante.",
+      "image": "https://assets.onbuy.com/i3/product/d0ac6ad43de24208810fa0268c3e942c-m144240974/luffy-and-trafalgar-law-sneaker-custom-anime-shoes.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Converse",
+      "prezzo": 50,
+      "description": "Classic high cut ankle sneaker is perfect for casual wear year round Simple details allow you to pair easily with any casual outfit",
+      "image": "https://cdn.shopify.com/s/files/1/0255/6421/7449/products/WHOHOLL-Pokemon-Pikachu-Anime-Cartoon-Hand-Painted-Canvas-Shoes-High-Top-Casual-Sneaker-Minion-Shoes-Adults_1274d86d-231a-489c-b501-70492d216558_500x.jpg?v=1571719975"
+    },
+    {
+      "id": 3,
+      "title": "Sneakers custom",
+      "prezzo": 59.71,
+      "description": "Scarpe da ginnastica anime ,  personalizzate , casual da uomo , anime giapponesi",
+      "image": "https://i.etsystatic.com/26090010/r/il/2a9589/3386345838/il_500x500.3386345838_qea6.jpg"
+    },
+    {
+      "id": 4,
+      "title": "AIR HOKAGE 7",
+      "prezzo": 65.5,
+      "description": "Signature Air styled sneakers with the iconic Swoosh , are custom-made-to-order, Unisex and handcrafted to the highest quality standards.",
+      "image": "https://cdn.shopify.com/s/files/1/0458/1385/8453/products/Untitleddesign_30-removebg-preview.png?v=1668118069"
+    },
+    {
+      "id": 5,
+      "title": "air force 1",
+      "prezzo": 70,
+      "description": "Fire and Ice Todoroki - Low Top Sneaker -July 2021 Edition. Design made by Anime X Sneakers Artists, inspired by Air Force 1's.",
+      "image": "https://i.etsystatic.com/31057726/r/il/0cb149/4340455072/il_500x500.4340455072_pbfj.jpg"
+    },
+    {
+      "id": 6,
+      "title": "nike air ",
+      "prezzo": 47.5,
+      "description": "Best Gift: printed with your favorite pattern of basketball shoes, no matter where you go, can highlight the fashion breath. They could be the ideal choice for your favorite gift.",
+      "image": "https://m.media-amazon.com/images/I/618or+yACHS._UY500_.jpg"
+    }
+  ]
 }
